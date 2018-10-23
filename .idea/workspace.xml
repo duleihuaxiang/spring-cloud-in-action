@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84de4719-2d9c-47b1-8839-a980f6a228d3" name="Default" comment="" />
+    <list default="true" id="84de4719-2d9c-47b1-8839-a980f6a228d3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/e-book/e-book-consumer/e-book-consumer-hystrix/e-book-consumer-hystrix-turbine/target/" />
     <ignored path="$PROJECT_DIR$/e-book/config/config-client-bus2/target/" />
     <ignored path="$PROJECT_DIR$/e-book/e-book-trade/target/" />
@@ -199,11 +202,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.log" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework/logs/server.log">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
               <caret line="404" column="143" lean-forward="false" selection-start-line="404" selection-start-column="143" selection-end-line="404" selection-end-column="143" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -275,7 +288,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/e-book/config/config-client/src/main/java/com/agan/book/config/exception/FrameworkException.java" />
         <option value="$PROJECT_DIR$/e-book/config/config-client/src/main/java/com/agan/book/config/base/enums/EnumHttp403Error.java" />
         <option value="$PROJECT_DIR$/e-book/config/config-client/src/main/java/com/agan/book/config/exception/ExceptionResult.java" />
         <option value="$PROJECT_DIR$/e-book/config/config-client/src/main/java/com/agan/book/config/handler/FrameworkExceptionHandler.java" />
@@ -326,6 +338,7 @@
         <option value="$PROJECT_DIR$/framework/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/framework/src/main/java/com/goods/service/BrandServiceImpl.java" />
         <option value="$PROJECT_DIR$/framework/src/main/resources/com/goods/mapper/BrandEntityMapper.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -678,130 +691,6 @@
               <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-in-action" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-in-action" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -1140,12 +1029,12 @@
       <workItem from="1539679537931" duration="604000" />
       <workItem from="1539744117126" duration="319000" />
       <workItem from="1539930610901" duration="348000" />
-      <workItem from="1539931639999" duration="29900000" />
+      <workItem from="1539931639999" duration="30253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102506000" />
+    <option name="totallyTimeSpent" value="102859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1397" height="835" extended-state="0" />
@@ -1254,14 +1143,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/e-book/zuul/zuul-gateway/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/e-book/zuul/zuul-gateway-filter/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1686,6 +1567,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="404" column="143" lean-forward="false" selection-start-line="404" selection-start-column="143" selection-end-line="404" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding />
         </state>
       </provider>
