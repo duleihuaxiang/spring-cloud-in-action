@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.dudu.springcloud</groupId>    <artifactId>e-book</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>sleuth</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>sleuth-consumer</module>
+  	<module>sleuth-product</module>
+  	<module>sleuth-elk-consumer</module>
+  	<module>sleuth-elk-product</module>
+
+  	<module>sleuth-zipkin-consumer</module>
+  	<module>sleuth-zipkin-product</module>
+  	<module>sleuth-zipkin-server</module>
+  	
+  	<module>sleuth-zipkin-mq-consumer</module>
+  	<module>sleuth-zipkin-mq-product</module>
+  	<module>sleuth-zipkin-mq-server</module>
+  	<module>sleuth-zipkin-mysql-server</module>
+
+
+  </modules>
+</project>

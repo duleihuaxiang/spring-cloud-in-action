@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.dudu.springcloud</groupId>    <artifactId>e-book-consumer</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>e-book-consumer-hystrix</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>e-book-consumer-hystrix-dashboard</module>
+  	<module>e-book-consumer-hystrix-feign-factory</module>
+  	<module>e-book-consumer-hystrix-feign-fallback</module>
+  	<module>e-book-consumer-hystrix-ribbon-batch</module>
+  	<module>e-book-consumer-hystrix-ribbon-breaker</module>
+  	<module>e-book-consumer-hystrix-ribbon-cache</module>
+  	<module>e-book-consumer-hystrix-ribbon-fallback</module>
+  	<module>e-book-consumer-hystrix-ribbon-semaphore</module>
+  	<module>e-book-consumer-hystrix-ribbon-threadpool</module>
+  	<module>e-book-consumer-hystrix-ribbon-threadpool-mq</module>
+  	<module>e-book-consumer-hystrix-turbine</module>
+  	<module>e-book-consumer-hystrix-turbine-mq</module>
+  </modules>
+</project>
