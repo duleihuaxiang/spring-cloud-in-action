@@ -1,7 +1,7 @@
 ##ignore this file##
 /logs/ 
 /target/
-.idea/**
+/.idea/*
 .settings/
 .classpath
 .project

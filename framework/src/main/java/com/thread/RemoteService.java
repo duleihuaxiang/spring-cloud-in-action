@@ -1,13 +1,9 @@
 package com.thread;
 
 import com.alibaba.fastjson.JSONObject;
-import com.autogen.common.base.result.Result;
 import com.goods.dao.BrandEntity;
-import com.goods.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
