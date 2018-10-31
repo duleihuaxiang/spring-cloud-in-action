@@ -153,7 +153,6 @@
       <module name="sleuth-product" target="1.6" />
       <module name="sleuth-product-api" target="1.5" />
       <module name="sleuth-product-core" target="1.5" />
-      <module name="sleuth-zipkin-consumer" target="1.6" />
       <module name="sleuth-zipkin-mq-consumer" target="1.5" />
       <module name="sleuth-zipkin-mq-product" target="1.6" />
       <module name="sleuth-zipkin-mq-product-api" target="1.5" />
@@ -161,8 +160,8 @@
       <module name="sleuth-zipkin-mq-server" target="1.8" />
       <module name="sleuth-zipkin-mysql-server" target="1.8" />
       <module name="sleuth-zipkin-product" target="1.6" />
-      <module name="sleuth-zipkin-product-api" target="1.5" />
-      <module name="sleuth-zipkin-product-core" target="1.5" />
+      <module name="sleuth-zipkin-product-api" target="1.6" />
+      <module name="sleuth-zipkin-product-core" target="1.6" />
       <module name="sleuth-zipkin-server" target="1.8" />
       <module name="spring-cloud-in-action" target="1.6" />
       <module name="stream" target="1.6" />
@@ -177,12 +176,12 @@
       <module name="stream-sender" target="1.5" />
       <module name="zuul" target="1.6" />
       <module name="zuul-gateway" target="1.5" />
-      <module name="zuul-gateway-fallback" target="1.5" />
-      <module name="zuul-gateway-filter" target="1.5" />
-      <module name="zuul-gateway-filter-exception" target="1.5" />
-      <module name="zuul-gateway-ratelimit" target="1.5" />
-      <module name="zuul-gateway-route" target="1.5" />
-      <module name="zuul-gateway-timeout" target="1.5" />
+      <module name="zuul-gateway-fallback" target="1.6" />
+      <module name="zuul-gateway-filter" target="1.6" />
+      <module name="zuul-gateway-filter-exception" target="1.6" />
+      <module name="zuul-gateway-ratelimit" target="1.6" />
+      <module name="zuul-gateway-route" target="1.6" />
+      <module name="zuul-gateway-timeout" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

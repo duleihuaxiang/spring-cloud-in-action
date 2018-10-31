@@ -32,17 +32,17 @@ public class ProductFacadeImpl implements ProductFacade{
 	public List<Product> findAllProduct(){
 		return  this.productService.findAllProduct();
 	}
+
 	public List<Product> listProduct(){
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-//			 TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			Thread.sleep(2000);
+//		} catch (InterruptedException e) {
+////			 TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		return  this.productService.findAllProduct();
 	}
 
-	@Override
 	public Product getProduct(Integer id) throws Exception {
 
 		try {
@@ -69,17 +69,14 @@ public class ProductFacadeImpl implements ProductFacade{
 
 	}
 
-	@Override
 	public Product getProduct1(@RequestBody Product obj) {
 		return obj;
 	}
 
-	@Override
 	public Product getProduct2(Integer id, String name) {
 		return new Product(id,name);
 	}
 
-	@Override
 	public Product addProduct(@RequestBody Product obj) {
 		return obj;
 	}

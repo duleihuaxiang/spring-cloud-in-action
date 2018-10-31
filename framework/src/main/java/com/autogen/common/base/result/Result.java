@@ -1,9 +1,10 @@
 package com.autogen.common.base.result;
 
+import java.io.Serializable;
 import java.util.List;
 
 
-public class Result<T> {
+public class Result<T> implements Serializable{
     private String code;
     private String message;
     private List<String> cause;

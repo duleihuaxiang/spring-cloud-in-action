@@ -1,28 +1,29 @@
 package com.agan.book.zuul.filter;
 
-import javax.servlet.http.HttpServletRequest;
-
+import com.netflix.zuul.ZuulFilter;
+import com.netflix.zuul.context.RequestContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.netflix.zuul.ZuulFilter;
-import com.netflix.zuul.context.RequestContext;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
+
 /**
  * 
-*@author 阿甘  
-*@see  http://study.163.com/instructor/1016671292.htm
-*@version 1.0 
+*@author
+*@version 1.0
  */
 @Component
 public class LogFilter extends ZuulFilter{
 
 	private static final Logger logger =LoggerFactory.getLogger(LogFilter.class);
-	
+	public static final ThreadLocal<Map<String, String>> threadLocal = new ThreadLocal<Map<String, String>>();
+
 	/**
 	 * 开启过滤器
 	 */
-//	@Override
+	@Override
 	public boolean shouldFilter() {
 		return true;
 	}
@@ -30,17 +31,21 @@ public class LogFilter extends ZuulFilter{
 	/**
 	 * 过滤器的作用，打印请求的信息
 	 */
-//	@Override
+	@Override
 	public Object run() {
 		RequestContext rc=RequestContext.getCurrentContext();
 		HttpServletRequest request=rc.getRequest();
+		Map keyrMap = request.getParameterMap();
+//		Map valueMap = request.getParameterValues()
+		logger.info("!!!!!!!",keyrMap.toString());
+
 		logger.info("method={},url={}",request.getMethod(),request.getRequestURL().toString());
 		return null;
 	}
 
 	@Override
 	public String filterType() {
-		return "error";
+		return "post";
 	}
 
 	@Override

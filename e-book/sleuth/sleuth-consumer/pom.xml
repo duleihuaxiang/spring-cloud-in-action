@@ -6,10 +6,10 @@
     <groupId>com.dudu.springcloud</groupId>    <artifactId>sleuth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.agan.springcloud</groupId>
+  <groupId>com.dudu.springcloud</groupId>
   <artifactId>sleuth-consumer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>e-book-consumer-web</name>
+  <name>sleuth-consumer</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,5 +1,7 @@
 package com.goods.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.autogen.common.base.controller.BaseController;
 
 import com.autogen.common.base.result.Page;
@@ -10,11 +12,17 @@ import com.autogen.common.utils.BeanUtils;
 import com.goods.service.BrandService;
 import com.goods.service.BrandService.Brand;
 import com.goods.vo.req.BrandReq;
+import com.thread.MultiResult;
+import com.thread.RemoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
 import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 
 
 @RestController
@@ -22,7 +30,45 @@ import java.util.Map;
 public class BrandController extends BaseController {
 
     @Autowired
+    private RemoteService remoteService;
+
+    @Autowired
     private BrandService brandService;
+
+    @Autowired
+    private MultiResult multiResult;
+
+    @RequestMapping("/list")
+    public List getList2() throws ExecutionException, InterruptedException {
+        List  ret  = multiResult.getList();
+        return ret;
+    }
+
+    @RequestMapping("/async")
+    public Callable<String> getBrandList(){
+        long t1 = System.currentTimeMillis();
+        System.out.println(Thread.currentThread().getName()+"------tomcat 主线程 开始---"+t1);
+
+        Callable<String> callable = new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                long t1 = System.currentTimeMillis();
+                System.out.println(Thread.currentThread().getName()+"------异步线程 开始---"+t1);
+                String ss= remoteService.getBrandList();
+                long t2 = System.currentTimeMillis();
+
+                System.out.println(Thread.currentThread().getName()+"------异步线程 结束---"+t2);
+                System.out.println(Thread.currentThread().getName()+"------异步线程 耗时---"+(t2-t1));
+
+                return ss;
+            }
+        };
+
+        long t2 = System.currentTimeMillis();
+        System.out.println(Thread.currentThread().getName()+"------tomcat 主线程 结束---"+t2);
+
+        return callable;
+    }
     
     @PostMapping("")
      @Transactional(rollbackFor = Exception.class)
@@ -62,6 +108,7 @@ public class BrandController extends BaseController {
 
     @GetMapping("/{id}")
     public Brand get(@PathVariable("id") final Long id) {
+        int xx = 12/0;
         Brand obj = brandService.getById(id);
         return obj;
     }

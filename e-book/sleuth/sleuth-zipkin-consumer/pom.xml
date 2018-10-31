@@ -3,13 +3,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.dudu.springcloud</groupId>    <artifactId>sleuth</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+	  <groupId>com.dudu.springcloud</groupId>
+	  <artifactId>sleuth</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.agan.springcloud</groupId>
+  <groupId>com.dudu.springcloud</groupId>
   <artifactId>sleuth-zipkin-consumer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>e-book-consumer-web</name>
+  <name>sleuth-zipkin-consumer</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,7 +19,7 @@
   
   
 		<dependency>
-			<groupId>com.agan.springcloud</groupId>
+			<groupId>com.dudu.springcloud</groupId>
 			<artifactId>sleuth-zipkin-product-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

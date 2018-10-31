@@ -4,12 +4,12 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.agan.springcloud</groupId>
+		<groupId>com.dudu.springcloud</groupId>
 		<artifactId>zuul</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>zuul-gateway-route</artifactId>
-	<name>eureka-consumer</name>
+	<name>zuul-gateway-route</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,13 +18,31 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-classic</artifactId>
+				</exclusion>
+
+			</exclusions>
 		</dependency>
 		<dependency>
 	      <groupId>org.springframework.cloud</groupId>
 	      <artifactId>spring-cloud-starter-zuul</artifactId>
+
 	    </dependency>
-		
-	</dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
+
+    </dependencies>
 
 
 	<build>
